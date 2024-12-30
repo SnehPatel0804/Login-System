@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Magic Link</title>
+</head>
+<body>
+    <h1>Request a Magic Login Link</h1>
+    
+    <!-- This block displays the error -->
+    {% if error %}
+        <p style="color: red;">{{ error }}</p> <!-- Rate limit error will show here -->
+    {% endif %}
+    
+    <!-- This block displays a success message -->
+    {% if message %}
+        <p style="color: green;">{{ message }}</p>
+    {% endif %}
+    
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Send Magic Link</button>
+    </form>
+    
+    <a href="{% url 'home' %}">Back to Home</a>
+</body>
+</html>

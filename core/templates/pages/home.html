@@ -1,0 +1,33 @@
+<!-- templates/pages/home.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Home Page!</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'product_list' %}">Products</a></li>
+                
+
+                {% if user.is_authenticated %}
+                    <li><a href="{% url 'logout' %}">Logout</a></li>
+                {% else %}
+                    <li><a href="{% url 'login' %}">Login</a></li>
+                    <li><a href="{% url 'request_magic_link' %}">Magic Login</a></li>
+                    <li><a href="{% url 'register' %}">Register</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Home</h2>
+        <p>This is a simple home page. </p>
+    </main>
+</body>
+</html>
+

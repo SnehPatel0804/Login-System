@@ -1,0 +1,393 @@
+Internal Server Error: /user/login/
+Traceback (most recent call last):
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/snehp/projects/core/user/views.py", line 15, in login_view
+    return redirect('home')  # Redirect to the home page after login
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/urls/resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'home' not found. 'home' is not a valid view function or pattern name.
+"POST /user/login/ HTTP/1.1" 500 85276
+Internal Server Error: /user/login/
+Traceback (most recent call last):
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/snehp/projects/core/user/views.py", line 24, in login_view
+    return redirect('home')  # Redirect to home if user is logged in
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/urls/resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'home' not found. 'home' is not a valid view function or pattern name.
+"GET /user/login/ HTTP/1.1" 500 83129
+Internal Server Error: /user/login/
+Traceback (most recent call last):
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/snehp/projects/core/user/views.py", line 24, in login_view
+    return redirect('home')  # Redirect to home if user is logged in
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/urls/resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'home' not found. 'home' is not a valid view function or pattern name.
+"GET /user/login/ HTTP/1.1" 500 83266
+Internal Server Error: /user/register/
+Traceback (most recent call last):
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/snehp/projects/core/user/views.py", line 8, in register_view
+    if form.is_valid():
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/forms/forms.py", line 197, in is_valid
+    return self.is_bound and not self.errors
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/forms/forms.py", line 192, in errors
+    self.full_clean()
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/forms/forms.py", line 325, in full_clean
+    self._clean_fields()
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/forms/forms.py", line 335, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/contrib/auth/forms.py", line 268, in clean_username
+    and self._meta.model.objects.filter(username__iexact=username).exists()
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/db/models/manager.py", line 196, in __get__
+    raise AttributeError(
+AttributeError: Manager isn't available; 'auth.User' has been swapped for 'user.CustomUser'
+"POST /user/register/ HTTP/1.1" 500 89827
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/snehp/projects/core/core/views.py", line 5, in home_view
+    return render(request, 'pages/home.html')
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: pages/home.html
+"GET / HTTP/1.1" 500 78776
+Internal Server Error: /user/register/
+Traceback (most recent call last):
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/snehp/projects/core/user/views.py", line 8, in register_view
+    if form.is_valid():
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/forms/forms.py", line 197, in is_valid
+    return self.is_bound and not self.errors
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/forms/forms.py", line 192, in errors
+    self.full_clean()
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/forms/forms.py", line 325, in full_clean
+    self._clean_fields()
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/forms/forms.py", line 335, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/contrib/auth/forms.py", line 268, in clean_username
+    and self._meta.model.objects.filter(username__iexact=username).exists()
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/db/models/manager.py", line 196, in __get__
+    raise AttributeError(
+AttributeError: Manager isn't available; 'auth.User' has been swapped for 'user.CustomUser'
+"POST /user/register/ HTTP/1.1" 500 89827
+Internal Server Error: /products/
+Traceback (most recent call last):
+  File "/home/snehp/projects/core/core/views.py", line 17, in product_list
+    raise ValueError("No products found.")
+ValueError: No products found.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/snehp/projects/core/core/views.py", line 20, in product_list
+    return render(request, 'pages/error.html', {'error_message': str(e)})
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: pages/error.html
+"GET /products/ HTTP/1.1" 500 83601
+Internal Server Error: /user/magic-link/
+Traceback (most recent call last):
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/snehp/projects/core/user/views.py", line 80, in request_magic_link
+    send_mail(
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/mail/__init__.py", line 88, in send_mail
+    return mail.send()
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/mail/message.py", line 301, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/mail/backends/smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/mail/backends/smtp.py", line 86, in open
+    self.connection = self.connection_class(
+  File "/usr/lib/python3.10/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib/python3.10/smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/lib/python3.10/smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "/usr/lib/python3.10/socket.py", line 845, in create_connection
+    raise err
+  File "/usr/lib/python3.10/socket.py", line 833, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+"POST /user/magic-link/ HTTP/1.1" 500 108277
+Internal Server Error: /user/magic-link/
+Traceback (most recent call last):
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/snehp/projects/core/user/views.py", line 80, in request_magic_link
+    send_mail(
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/mail/__init__.py", line 88, in send_mail
+    return mail.send()
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/mail/message.py", line 301, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/mail/backends/smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/mail/backends/smtp.py", line 86, in open
+    self.connection = self.connection_class(
+  File "/usr/lib/python3.10/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib/python3.10/smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/lib/python3.10/smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "/usr/lib/python3.10/socket.py", line 845, in create_connection
+    raise err
+  File "/usr/lib/python3.10/socket.py", line 833, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+"POST /user/magic-link/ HTTP/1.1" 500 108552
+Internal Server Error: /user/magic-link/
+Traceback (most recent call last):
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/snehp/projects/core/user/views.py", line 80, in request_magic_link
+    send_mail(
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/mail/__init__.py", line 88, in send_mail
+    return mail.send()
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/mail/message.py", line 301, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/mail/backends/smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/mail/backends/smtp.py", line 86, in open
+    self.connection = self.connection_class(
+  File "/usr/lib/python3.10/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib/python3.10/smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/lib/python3.10/smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "/usr/lib/python3.10/socket.py", line 845, in create_connection
+    raise err
+  File "/usr/lib/python3.10/socket.py", line 833, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+"POST /user/magic-link/ HTTP/1.1" 500 108424
+Internal Server Error: /user/magic-login/
+Traceback (most recent call last):
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/snehp/projects/core/user/views.py", line 102, in magic_login
+    return render(request, 'pages/error.html', {'error': 'Invalid or missing token.'})
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: pages/error.html
+"GET /user/magic-login/ HTTP/1.1" 500 79847
+Internal Server Error: /user/logout/
+Traceback (most recent call last):
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/snehp/projects/core/user/views.py", line 49, in logout_view
+    return redirect('login')  # Redirect to login page after logout
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/urls/resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login' not found. 'login' is not a valid view function or pattern name.
+"GET /user/logout/ HTTP/1.1" 500 83256
+Internal Server Error: /user/logout/
+Traceback (most recent call last):
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/snehp/projects/core/user/views.py", line 48, in logout_view
+    return redirect('login')  # Redirect to login page after logout
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/urls/resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login' not found. 'login' is not a valid view function or pattern name.
+"GET /user/logout/ HTTP/1.1" 500 83372
+Internal Server Error: /user/logout/
+Traceback (most recent call last):
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/snehp/projects/core/user/views.py", line 48, in logout_view
+    return redirect('login')  # Redirect to login page after logout
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/urls/resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login' not found. 'login' is not a valid view function or pattern name.
+"GET /user/logout/ HTTP/1.1" 500 83372
+Internal Server Error: /user/logout/
+Traceback (most recent call last):
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/snehp/projects/core/user/views.py", line 48, in logout_view
+    return redirect('login')  # Redirect to login page after logout
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/urls/resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login' not found. 'login' is not a valid view function or pattern name.
+"GET /user/logout/ HTTP/1.1" 500 83372
+Internal Server Error: /user/logout/
+Traceback (most recent call last):
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/snehp/projects/core/user/views.py", line 48, in logout_view
+    return redirect('login')  # Redirect to login page after logout
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/urls/resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login' not found. 'login' is not a valid view function or pattern name.
+"GET /user/logout/ HTTP/1.1" 500 83372
+Internal Server Error: /user/logout/
+Traceback (most recent call last):
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/snehp/projects/core/user/views.py", line 48, in logout_view
+    return redirect('login')  # Redirect to login page after logout
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/urls/resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login' not found. 'login' is not a valid view function or pattern name.
+"GET /user/logout/ HTTP/1.1" 500 83372
+Internal Server Error: /user/register/
+Traceback (most recent call last):
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/snehp/projects/core/user/views.py", line 21, in register_view
+    return render(request, 'pages/register.html', {'form': form})
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/template/base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/urls/resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login' not found. 'login' is not a valid view function or pattern name.
+"GET /user/register/ HTTP/1.1" 500 117386
+Internal Server Error: /user/magic-login/
+Traceback (most recent call last):
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/snehp/projects/core/user/views.py", line 109, in magic_login
+    return render(request, 'pages/error.html', {'error': 'Invalid or missing token.'})
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/snehp/projects/core/.venv/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: pages/error.html
+"GET /user/magic-login/ HTTP/1.1" 500 79580
